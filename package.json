@@ -1,0 +1,29 @@
+{
+  "name": "guia_perguntas",
+  "version": "1.0.0",
+  "description": "Aplicação de perguntas e respostas com Node.js, Express, EJS e MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql2",
+    "ejs",
+    "sequelize"
+  ],
+  "author": "miguellz67",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "normalize-port": "^1.0.0",
+    "sequelize": "^5.21.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

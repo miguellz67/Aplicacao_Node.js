@@ -11,5 +11,12 @@ module.exports = {
             res.redirect("/")
         }
     },
-    async an
+    async answer(req, res){
+        const answer = await Answer.create({
+            name: req.body.user,
+            body: req.body.restext,
+            questionId: req.body.question
+        })
+        res.redirect(`/Pergunta/${answer.questionId}`)
+    }
 }

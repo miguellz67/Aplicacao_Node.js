@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const connection = require('./bcd')
 
-const Answer = connection.define(
+const Answer = connection.define(`answer`,
     {
         name:{
             type: Sequelize.STRING,
@@ -10,6 +10,9 @@ const Answer = connection.define(
         body:{
             type: Sequelize.TEXT,
             allowNull: false
+        },
+        questionId:{
+            type: Sequelize.INTEGER
         }
     }
 )
